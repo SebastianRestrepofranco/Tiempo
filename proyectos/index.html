@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esencia & Tiempo - Perfumería y Relojes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="description" content="Esencia & Tiempo - Perfumes exclusivos y relojes de lujo. Encuentra las mejores marcas internacionales en Bogotá, Colombia.">
+    <meta name="keywords" content="perfumes, relojes, lujo, fragancias, Bogotá, Colombia, Dior, Chanel, Rolex, Omega">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="imagenes/LOGO/4.jpg" alt="Esencias del Tiempo" class="logo">
+            
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="relojes.html" class="nav-link">Relojes</a></li>
+                    <li><a href="perfumes.html" class="nav-link">Perfumes</a></li>
+                    <li><a href="contactanos.html" class="nav-link">Contáctanos</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menú móvil">☰</button>
+                <div class="cart-container">
+                    <button class="cart-btn" id="cart-btn" aria-label="Carrito de compras">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count hidden" id="cart-count">0</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="section active">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Esencia del Tiempo</h1>
+                    <h2 class="hero-subtitle">Perfumería y Relojes</h2>
+                    <p class="hero-description">
+                        Sumérgete en una nueva experiencia donde la elegancia se encuentra con el tiempo. 
+                        Descubre nuestra exclusiva colección de perfumes y relojes de las mejores marcas del mundo.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="perfumes.html" class="cta-button primary">Explorar Perfumes</a>
+                        <a href="relojes.html" class="cta-button secondary">Ver Relojes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Preview -->
+        <section class="featured-preview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Productos Destacados</h2>
+                    <p class="section-subtitle">Lo mejor de nuestras colecciones exclusivas</p>
+                </div>
+                
+                <div class="preview-grid">
+                    <div class="preview-card" data-category="perfumes">
+                        <div class="preview-image">
+                            <div class="preview-icon">🌸</div>
+                            <div class="preview-badge">Nuevo</div>
+                        </div>
+                        <div class="preview-content">
+                            <h3>Perfumes Exclusivos</h3>
+                            <p>Fragancias únicas para cada personalidad</p>
+                            <div class="preview-features">
+                                <span class="feature">✨ Marcas Premium</span>
+                                <span class="feature">🎁 Envoltura Elegante</span>
+                                <span class="feature">🚚 Envío Seguro</span>
+                            </div>
+                        </div>
+                        <a href="perfumes.html" class="preview-link">
+                            <span>Explorar Perfumes</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="preview-card" data-category="relojes">
+                        <div class="preview-image">
+                            <div class="preview-icon">⌚</div>
+                            <div class="preview-badge">Premium</div>
+                        </div>
+                        <div class="preview-content">
+                            <h3>Relojes de Lujo</h3>
+                            <p>Precisión suiza y diseño excepcional</p>
+                            <div class="preview-features">
+                                <span class="feature">🏆 Garantía Internacional</span>
+                                <span class="feature">🔧 Servicio Técnico</span>
+                                <span class="feature">💎 Autenticidad</span>
+                            </div>
+                        </div>
+                        <a href="relojes.html" class="preview-link">
+                            <span>Ver Relojes</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Sellers Section -->
+        <section class="best-sellers">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Productos Más Vendidos</h2>
+                    <p class="section-subtitle">Los favoritos de nuestros clientes</p>
+                </div>
+
+                <div class="bestseller-grid">
+                    <div class="bestseller-item" data-product="dior-sauvage">
+                        <div class="bestseller-rank">#1</div>
+                        <div class="bestseller-image">🌿</div>
+                        <div class="bestseller-info">
+                            <h4>Dior Sauvage</h4>
+                            <p class="bestseller-price">$120</p>
+                            <p class="bestseller-category">Perfume Masculino</p>
+                            <div class="bestseller-rating">
+                                ⭐⭐⭐⭐⭐ <span>(2,847 reseñas)</span>
+                            </div>
+                        </div>
+                        <button class="quick-add-btn" onclick="addToCart('Dior Sauvage', '$120', 'Hombre')">
+                            <i class="fas fa-plus"></i> Agregar
+                        </button>
+                    </div>
+
+                    <div class="bestseller-item" data-product="chanel-5">
+                        <div class="bestseller-rank">#2</div>
+                        <div class="bestseller-image">🌸</div>
+                        <div class="bestseller-info">
+                            <h4>Chanel No. 5</h4>
+                            <p class="bestseller-price">$150</p>
+                            <p class="bestseller-category">Perfume Femenino</p>
+                            <div class="bestseller-rating">
+                                ⭐⭐⭐⭐⭐ <span>(3,921 reseñas)</span>
+                            </div>
+                        </div>
+                        <button class="quick-add-btn" onclick="addToCart('Chanel No. 5', '$150', 'Mujer')">
+                            <i class="fas fa-plus"></i> Agregar
+                        </button>
+                    </div>
+
+                    <div class="bestseller-item" data-product="rolex-submariner">
+                        <div class="bestseller-rank">#3</div>
+                        <div class="bestseller-image">⌚</div>
+                        <div class="bestseller-info">
+                            <h4>Rolex Submariner</h4>
+                            <p class="bestseller-price">$8,500</p>
+                            <p class="bestseller-category">Reloj Masculino</p>
+                            <div class="bestseller-rating">
+                                ⭐⭐⭐⭐⭐ <span>(1,654 reseñas)</span>
+                            </div>
+                        </div>
+                        <button class="quick-add-btn" onclick="addToCart('Rolex Submariner', '$8,500', 'Hombre')">
+                            <i class="fas fa-plus"></i> Agregar
+                        </button>
+                    </div>
+
+                    <div class="bestseller-item" data-product="cartier-santos">
+                        <div class="bestseller-rank">#4</div>
+                        <div class="bestseller-image">⌚</div>
+                        <div class="bestseller-info">
+                            <h4>Cartier Santos</h4>
+                            <p class="bestseller-price">$6,900</p>
+                            <p class="bestseller-category">Reloj Femenino</p>
+                            <div class="bestseller-rating">
+                                ⭐⭐⭐⭐⭐ <span>(987 reseñas)</span>
+                            </div>
+                        </div>
+                        <button class="quick-add-btn" onclick="addToCart('Cartier Santos', '$6,900', 'Mujer')">
+                            <i class="fas fa-plus"></i> Agregar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2 class="about-title">Nuestra Historia</h2>
+                        <p class="about-description">
+                            En Esencias del Tiempo creemos que la elegancia debe estar al alcance de todos. 
+                            Especializados en relojes y perfumes que permiten a hombres y mujeres expresar su personalidad única,
+                            combinamos calidad excepcional con precios justos y accesibles.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <i class="fas fa-shipping-fast"></i>
+                                <span>Envío Seguro</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-headset"></i>
+                                <span>Atención Especializada</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-icon">✨</div>
+                            <span class="stat-number">Nuevo</span>
+                            <span class="stat-label">Concepto Fresco</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">🏆</div>
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Marcas Premium</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">💰</div>
+                            <span class="stat-number">Hasta 50%</span>
+                            <span class="stat-label">Precios Competitivos</span>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-icon">🚚</div>
+                            <span class="stat-number">Envíos a su alcance</span>
+                            <span class="stat-label">Envío Nacional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nuestros Servicios</h2>
+                    <p class="section-subtitle">Experiencia premium en cada detalle</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🎁</div>
+                        <h3>Envoltura de Regalo</h3>
+                        <p>Presentación elegante para ocasiones especiales con papel premium y detalles exclusivos.</p>
+                        <ul class="service-features">
+                            <li>Papel premium importado</li>
+                            <li>Lazos y detalles dorados</li>
+                            <li>Tarjeta personalizada</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🤝</div>
+                        <h3>Asesoría Personal</h3>
+                        <p>Expertos disponibles para recomendaciones personalizadas según tu estilo.</p>
+                        <ul class="service-features">
+                            <li>Consulta personalizada</li>
+                            <li>Expertos en productos</li>
+                            <li>Recomendaciones profesionales</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">🚚</div>
+                        <h3>Envío Seguro</h3>
+                        <p>Entregas aseguradas a nivel nacional con seguimiento en tiempo real.</p>
+                        <ul class="service-features">
+                            <li>Seguro completo incluido</li>
+                            <li>Seguimiento GPS</li>
+                            <li>Entrega en 1-3 días</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2>¿Quieres ser el primero en conocer nuestras ofertas?</h2>
+                        <p>Suscríbete a nuestro newsletter y recibe descuentos exclusivos, novedades y consejos de estilo.</p>
+                    </div>
+                    <div class="newsletter-form">
+                        <form id="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" placeholder="Tu correo electrónico" required>
+                                <button type="submit">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Suscribirse
+                                </button>
+                            </div>
+                            <div class="newsletter-benefits">
+                                <span>✨ Descuentos exclusivos</span>
+                                <span>🎁 Ofertas especiales</span>
+                                <span>📰 Novedades primero</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Esencia & Tiempo</h3>
+                    <p>Donde la elegancia se encuentra con el tiempo</p>
+                    <div class="footer-contact">
+                        <p>📞 +57 (1) 322 858 5364</p>
+                        <p>✉️ info@esenciaytiempo.com</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="relojes.html">Relojes</a></li>
+                        <li><a href="perfumes.html">Perfumes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Atención al Cliente</h4>
+                    <ul>
+                        <li><a href="contactanos.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#envios">Política de Envíos</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Esencia & Tiempo. Todos los derechos reservados.</p>
+                    <p>Desarrollado con ❤️ para una experiencia premium</p>
+                </div>
+                <div class="footer-badges">
+                    <span class="badge">🔒 Compra Segura</span>
+                    <span class="badge">🚚 Envío Gratis</span>
+                    <span class="badge">🏆 Garantía</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal del Carrito -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2><i class="fas fa-shopping-cart"></i> Mi Carrito</h2>
+                <button class="close-cart" id="close-cart" aria-label="Cerrar carrito">&times;</button>
+            </div>
+
+            <div class="cart-body">
+                <!-- Lista de productos en el carrito -->
+                <div class="cart-items" id="cart-items">
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Tu carrito está vacío</p>
+                        <p>¡Agrega algunos productos increíbles!</p>
+                    </div>
+                </div>
+
+                <!-- Total del carrito -->
+                <div class="cart-total" id="cart-total-section" style="display: none;">
+                    <div class="total-row">
+                        <span>Subtotal:</span>
+                        <span id="cart-subtotal">$0</span>
+                    </div>
+                    <div class="total-row total-final">
+                        <span>Total:</span>
+                        <span id="cart-total">$0</span>
+                    </div>
+                </div>
+
+                <!-- Formulario de datos del cliente -->
+                <div class="customer-form" id="customer-form" style="display: none;">
+                    <h3><i class="fas fa-user"></i> Datos del Cliente</h3>
+                    <form id="checkout-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-name">Nombre Completo *</label>
+                                <input type="text" id="customer-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-phone">Teléfono/WhatsApp *</label>
+                                <input type="tel" id="customer-phone" name="phone" required placeholder="+57 300 123 4567">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-email">Email</label>
+                                <input type="email" id="customer-email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-city">Ciudad *</label>
+                                <input type="text" id="customer-city" name="city" required placeholder="Bogotá">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-address">Dirección de Entrega</label>
+                            <input type="text" id="customer-address" name="address" placeholder="Calle 123 #45-67, Apto 101">
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-notes">Notas Adicionales</label>
+                            <textarea id="customer-notes" name="notes" rows="3" placeholder="Comentarios especiales, preferencias de entrega, etc."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Opciones de pago -->
+                <div class="payment-options" id="payment-options" style="display: none;">
+                    <h3><i class="fas fa-credit-card"></i> Opciones de Pago</h3>
+                    <p class="payment-note">Elige tu método de pago preferido. Te enviaremos los datos de la cuenta correspondiente por WhatsApp.</p>
+                    
+                    <div class="payment-methods">
+                        <div class="payment-method" data-method="nequi">
+                            <div class="payment-icon nequi">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="payment-info">
+                                <h4>Nequi</h4>
+                                <p>Transferencia desde tu app Nequi</p>
+                            </div>
+                            <div class="payment-radio">
+                                <input type="radio" name="payment" value="nequi" id="pay-nequi">
+                                <label for="pay-nequi"></label>
+                            </div>
+                        </div>
+
+                        <div class="payment-method" data-method="daviplata">
+                            <div class="payment-icon daviplata">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="payment-info">
+                                <h4>DaviPlata</h4>
+                                <p>Pago desde tu celular DaviPlata</p>
+                            </div>
+                            <div class="payment-radio">
+                                <input type="radio" name="payment" value="daviplata" id="pay-daviplata">
+                                <label for="pay-daviplata"></label>
+                            </div>
+                        </div>
+
+                        <div class="payment-method" data-method="bancolombia">
+                            <div class="payment-icon bancolombia">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="payment-info">
+                                <h4>Bancolombia</h4>
+                                <p>Transferencia bancaria</p>
+                            </div>
+                            <div class="payment-radio">
+                                <input type="radio" name="payment" value="bancolombia" id="pay-bancolombia">
+                                <label for="pay-bancolombia"></label>
+                            </div>
+                        </div>
+
+                        <div class="payment-method" data-method="mercadopago">
+                            <div class="payment-icon mercadopago">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div class="payment-info">
+                                <h4>Mercado Pago</h4>
+                                <p>Tarjetas y otros métodos</p>
+                                <a href="https://mercadopago.com.co" target="_blank" class="mp-link">Ver opciones</a>
+                            </div>
+                            <div class="payment-radio">
+                                <input type="radio" name="payment" value="mercadopago" id="pay-mercadopago">
+                                <label for="pay-mercadopago"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-footer">
+                <button class="btn-continue-shopping" id="continue-shopping">
+                    <i class="fas fa-arrow-left"></i> Seguir Comprando
+                </button>
+                <button class="btn-checkout" id="btn-checkout" style="display: none;">
+                    <i class="fas fa-whatsapp"></i> Finalizar Compra por WhatsApp
+                </button>
+                <button class="btn-clear-cart" id="clear-cart" style="display: none;">
+                    <i class="fas fa-trash"></i> Vaciar Carrito
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

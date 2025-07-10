@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Esencia & Tiempo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="imagenes/LOGO/4.jpg" alt="Esencia & Tiempo" class="logo">
+            
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="relojes.html" class="nav-link">Relojes</a></li>
+                    <li><a href="perfumes.html" class="nav-link">Perfumes</a></li>
+                    <li><a href="contactanos.html" class="nav-link active">Contáctanos</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menú móvil">☰</button>
+                <div class="cart-container">
+                    <button class="cart-btn" id="cart-btn" aria-label="Carrito de compras">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count hidden" id="cart-count">0</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contactanos Section -->
+        <section id="contactanos" class="section active">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contáctanos</h2>
+                    <p class="section-subtitle">Estamos aquí para ayudarte a encontrar la pieza perfecta</p>
+                </div>
+                
+                <div class="contact-layout">
+                    <div class="contact-form-container">
+                        <h3>Envíanos un Mensaje</h3>
+                        <form class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre Completo *</label>
+                                    <input type="text" id="nombre" name="nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Correo Electrónico *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="tel" id="telefono" name="telefono" placeholder="+57 300 123 4567">
+                                </div>
+                                <div class="form-group">
+                                    <label for="asunto">Asunto *</label>
+                                    <select id="asunto" name="asunto" required>
+                                        <option value="">Selecciona un asunto</option>
+                                        <option value="Consulta General">Consulta General</option>
+                                        <option value="Información de Productos">Información de Productos</option>
+                                        <option value="Servicio Técnico">Servicio Técnico</option>
+                                        <option value="Garantías">Garantías</option>
+                                        <option value="Ventas Corporativas">Ventas Corporativas</option>
+                                        <option value="Otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="interes">Producto de Interés</label>
+                                <select id="interes" name="interes">
+                                    <option value="">Selecciona una categoría</option>
+                                    <option value="Relojes para Hombre">Relojes para Hombre</option>
+                                    <option value="Relojes para Mujer">Relojes para Mujer</option>
+                                    <option value="Perfumes para Hombre">Perfumes para Hombre</option>
+                                    <option value="Perfumes para Mujer">Perfumes para Mujer</option>
+                                    <option value="Accesorios">Accesorios</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="mensaje">Mensaje *</label>
+                                <textarea id="mensaje" name="mensaje" rows="6" required 
+                                placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Deseo recibir información sobre nuevos productos y promociones
+                                </label>
+                            </div>
+                            <button type="submit" class="cta-button">Enviar Mensaje</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-container">
+                        <h3>Información de Contacto</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div class="contact-details">
+                                    <h4>Ubicación</h4>
+                                    <p>Centro Comercial Premium<br>
+                                    Calle Principal #123-45, Local 100<br>
+                                    Bogotá, Colombia</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">📞</div>
+                                <div class="contact-details">
+                                    <h4>Teléfonos</h4>
+                                    <p>Fijo: +57 (1) 322 858 5364<br>
+                                    WhatsApp: +57 322 375 700<br>
+                                    Línea Gratuita: 01 8000 123 456</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">✉️</div>
+                                <div class="contact-details">
+                                    <h4>Correos Electrónicos</h4>
+                                    <p>General: info@esenciaytiempo.com<br>
+                                    Ventas: ventas@esenciaytiempo.com<br>
+                                    Servicio: servicio@esenciaytiempo.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">🕒</div>
+                                <div class="contact-details">
+                                    <h4>Horarios de Atención</h4>
+                                    <p>Lunes - Viernes: 10:00 - 20:00<br>
+                                    Sábados: 10:00 - 20:00<br>
+                                    Domingos: 12:00 - 18:00<br>
+                                    <small>Festivos: Horarios especiales</small></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-media">
+                            <h4>Síguenos en Redes Sociales</h4>
+                            <div class="social-links">
+                                <a href="#" class="social-link facebook">📘 Facebook</a>
+                                <a href="#" class="social-link instagram">📷 Instagram</a>
+                                <a href="#" class="social-link whatsapp">💬 WhatsApp</a>
+                                <a href="#" class="social-link linkedin">💼 LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="map-section">
+                    <h3>Nuestra Ubicación</h3>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <p>🗺️ Mapa Interactivo</p>
+                            <p>Centro Comercial Premium<br>Calle Principal #123-45, Local 100<br>Zona Comercial, Bogotá</p>
+                            <div class="map-directions">
+                                <p><strong>Cómo llegar:</strong></p>
+                                <ul>
+                                    <li>🚇 TransMilenio: Estación más cercana</li>
+                                    <li>🚗 Parqueadero disponible en el centro comercial</li>
+                                    <li>🚕 Fácil acceso en taxi o Uber</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h3>Preguntas Frecuentes</h3>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h4>¿Ofrecen garantía internacional?</h4>
+                            <p>Sí, todos nuestros relojes incluyen garantía internacional del fabricante y certificado de autenticidad.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>¿Hacen envíos a otras ciudades?</h4>
+                            <p>Realizamos envíos a toda Colombia con seguro incluido. El tiempo de entrega es de 1-3 días hábiles.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>¿Aceptan métodos de pago?</h4>
+                            <p>Aceptamos efectivo, tarjetas de crédito/débito, transferencias bancarias y financiación hasta 36 meses.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>¿Ofrecen servicio técnico?</h4>
+                            <p>Contamos con taller especializado y técnicos certificados para mantenimiento y reparación de relojes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Section -->
+                <div class="services-section">
+                    <h3>Nuestros Servicios</h3>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <div class="service-icon">🎁</div>
+                            <h4>Envoltura de Regalo</h4>
+                            <p>Presentación elegante para ocasiones especiales</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">💎</div>
+                            <h4>Personalización</h4>
+                            <p>Grabado y personalización de relojes</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">🔧</div>
+                            <h4>Mantenimiento</h4>
+                            <p>Servicio técnico especializado y repuestos originales</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">🤝</div>
+                            <h4>Asesoría Personal</h4>
+                            <p>Expertos disponibles para recomendaciones</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">💳</div>
+                            <h4>Financiación</h4>
+                            <p>Planes de pago flexibles hasta 36 meses</p>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">🚚</div>
+                            <h4>Envío Seguro</h4>
+                            <p>Entregas aseguradas a nivel nacional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Esencia & Tiempo</h3>
+                    <p>Donde la elegancia se encuentra con el tiempo</p>
+                    <div class="footer-contact">
+                        <p>📍 Centro Comercial Premium, Bogotá</p>
+                        <p>📞 +57 (1) 322 858 5364</p>
+                        <p>✉️ info@esenciaytiempo.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="relojes.html">Relojes</a></li>
+                        <li><a href="perfumes.html">Perfumes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Atención al Cliente</h4>
+                    <ul>
+                        <li><a href="contactanos.html">Contacto</a></li>
+                        <li><a href="#faq">Preguntas Frecuentes</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#garantias">Garantías</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="footer-social">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">💬</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Esencia & Tiempo. Todos los derechos reservados.</p>
+                <p>Desarrollado con ❤️ para una experiencia premium</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal del Carrito -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2><i class="fas fa-shopping-cart"></i> Mi Carrito</h2>
+                <button class="close-cart" id="close-cart" aria-label="Cerrar carrito">&times;</button>
+            </div>
+
+            <div class="cart-body">
+                <!-- Lista de productos en el carrito -->
+                <div class="cart-items" id="cart-items">
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Tu carrito está vacío</p>
+                        <p>¡Agrega algunos productos increíbles!</p>
+                    </div>
+                </div>
+
+                <!-- Total del carrito -->
+                <div class="cart-total" id="cart-total-section" style="display: none;">
+                    <div class="total-row">
+                        <span>Subtotal:</span>
+                        <span id="cart-subtotal">$0</span>
+                    </div>
+                    <div class="total-row total-final">
+                        <span>Total:</span>
+                        <span id="cart-total">$0</span>
+                    </div>
+                </div>
+
+                <!-- Formulario de datos del cliente -->
+                <div class="customer-form" id="customer-form" style="display: none;">
+                    <h3><i class="fas fa-user"></i> Datos del Cliente</h3>
+                    <form id="checkout-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-name">Nombre Completo *</label>
+                                <input type="text" id="customer-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-phone">Teléfono/WhatsApp *</label>
+                                <input type="tel" id="customer-phone" name="phone" required placeholder="+57 300 123 4567">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-email">Email</label>
+                                <input type="email" id="customer-email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-city">Ciudad *</label>
+                                <input type="text" id="customer-city" name="city" required placeholder="Bogotá">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-address">Dirección de Entrega</label>
+                            <input type="text" id="customer-address" name="address" placeholder="Calle 123 #45-67, Apto 101">
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-notes">Notas Adicionales</label>
+                            <textarea id="customer-notes" name="notes" rows="3" placeholder="Comentarios especiales, preferencias de entrega, etc."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Opciones de pago -->
+                <div class="payment-options" id="payment-options" style="display: none;">
+                    <h3><i class="fas fa-credit-card"></i> Opciones de Pago</h3>
+                    <p class="payment-note">Elige tu método de pago preferido. Te enviaremos los datos de la cuenta correspondiente por WhatsApp.</p>
+                    
+                    <div class="payment-methods">
+                        <div class="payment-method" data-method="nequi">
+                            <div class="payment-icon nequi">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="payment-info">
+                                <h4>Nequi</h4>
+                                <p>Transferencia desde tu app Nequi</p>
+                            </div>
+                            <div class="payment-radio">
+                                <input type="radio" name="payment" value="nequi" id="pay-nequi">
+                                <label for="pay-nequi"></label>
+                            </div>
+                        </div>
+
+                        <div class="payment-method" data-method="daviplata">
+                            <div class="payment-icon daviplata">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="payment-info">
+                                <h4>DaviPlata</h4>
+                                <p>Pago desde tu celular DaviPlata</p>
+                            </div>
+                            <div class="payment-radio">
+                                <input type="radio" name="payment" value="daviplata" id="pay-daviplata">
+                                <label for="pay-daviplata"></label>
+                            </div>
+                        </div>
+
+                        <div class="payment-method" data-method="bancolombia">
+                            <div class="payment-icon bancolombia">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="payment-info">
+                                <h4>Bancolombia</h4>
+                                <p>Transferencia bancaria</p>
+                            </div>
+                            <div class="payment-radio">
+                                <input type="radio" name="payment" value="bancolombia" id="pay-bancolombia">
+                                <label for="pay-bancolombia"></label>
+                            </div>
+                        </div>
+
+                        <div class="payment-method" data-method="mercadopago">
+                            <div class="payment-icon mercadopago">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div class="payment-info">
+                                <h4>Mercado Pago</h4>
+                                <p>Tarjetas y otros métodos</p>
+                                <a href="https://mercadopago.com.co" target="_blank" class="mp-link">Ver opciones</a>
+                            </div>
+                            <div class="payment-radio">
+                                <input type="radio" name="payment" value="mercadopago" id="pay-mercadopago">
+                                <label for="pay-mercadopago"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-footer">
+                <button class="btn-continue-shopping" id="continue-shopping">
+                    <i class="fas fa-arrow-left"></i> Seguir Comprando
+                </button>
+                <button class="btn-checkout" id="btn-checkout" style="display: none;">
+                    <i class="fas fa-whatsapp"></i> Finalizar Compra por WhatsApp
+                </button>
+                <button class="btn-clear-cart" id="clear-cart" style="display: none;">
+                    <i class="fas fa-trash"></i> Vaciar Carrito
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

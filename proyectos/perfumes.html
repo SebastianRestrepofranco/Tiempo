@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfumes Exclusivos - Esencia & Tiempo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="imagenes/LOGO/4.jpg" alt="Esencia & Tiempo" class="logo">
+            
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="relojes.html" class="nav-link">Relojes</a></li>
+                    <li><a href="perfumes.html" class="nav-link active">Perfumes</a></li>
+                    <li><a href="contactanos.html" class="nav-link">Contáctanos</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menú móvil">☰</button>
+                <div class="cart-container">
+                    <button class="cart-btn" id="cart-btn" aria-label="Carrito de compras">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count hidden" id="cart-count">0</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Perfumes Section -->
+        <section id="perfumes" class="section active">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Fragancias Selectas</h2>
+                    <p class="section-subtitle">Despierta tus sentidos con nuestras esencias únicas</p>
+                </div>
+                
+                <div class="sub-navigation">
+                    <button class="sub-nav-btn active" data-target="perfumes-hombres">👨 Para Hombres</button>
+                    <button class="sub-nav-btn" data-target="perfumes-mujeres">👩 Para Mujeres</button>
+                </div>
+
+                <!-- Perfumes para Hombres -->
+                <div id="perfumes-hombres" class="sub-section active">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="gender-indicator for-men">Hombre</div>
+                            <div class="product-image">🌿</div>
+                            <h3 class="product-title">Dior Sauvage</h3>
+                            <p class="product-price">$120</p>
+                            <p class="product-description">Frescura salvaje y elegancia masculina. Notas de bergamota y pimienta.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="gender-indicator for-men">Hombre</div>
+                            <div class="product-image">🍊</div>
+                            <h3 class="product-title">Creed Aventus</h3>
+                            <p class="product-price">$350</p>
+                            <p class="product-description">Para aquellos que buscan la excelencia. Piña, abedul y almizcle.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="gender-indicator for-men">Hombre</div>
+                            <div class="product-image">🌰</div>
+                            <h3 class="product-title">Hermès Terre d'Hermès</h3>
+                            <p class="product-price">$160</p>
+                            <p class="product-description">La fuerza de la tierra en una fragancia. Pomelo, cedro y sílex.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="gender-indicator for-men">Hombre</div>
+                            <div class="product-image">🎋</div>
+                            <h3 class="product-title">Bleu de Chanel</h3>
+                            <p class="product-price">$150</p>
+                            <p class="product-description">Frescura moderna y masculina. Cítricos, cedro y sándalo.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="gender-indicator for-men">Hombre</div>
+                            <div class="product-image">🥃</div>
+                            <h3 class="product-title">Tom Ford Oud Wood</h3>
+                            <p class="product-price">$280</p>
+                            <p class="product-description">Elegancia oriental y maderas exóticas. Oud, rosa y sándalo.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="gender-indicator for-men">Hombre</div>
+                            <div class="product-image">🌊</div>
+                            <h3 class="product-title">Acqua di Parma Colonia</h3>
+                            <p class="product-price">$180</p>
+                            <p class="product-description">Tradición italiana desde 1916. Cítricos sicilianos y lavanda.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="gender-indicator for-men">Hombre</div>
+                            <div class="product-image">🌲</div>
+                            <h3 class="product-title">Armani Code</h3>
+                            <p class="product-price">$95</p>
+                            <p class="product-description">Seducción en estado puro. Bergamota, lavanda y tabaco.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="gender-indicator for-men">Hombre</div>
+                            <div class="product-image">🍃</div>
+                            <h3 class="product-title">Versace Eros</h3>
+                            <p class="product-price">$85</p>
+                            <p class="product-description">Pasión y deseo mediterráneo. Menta, manzana verde y vainilla.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfumes para Mujeres -->
+                <div id="perfumes-mujeres" class="sub-section">
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <div class="gender-indicator for-women">Mujer</div>
+                            <div class="product-image">🌸</div>
+                            <h3 class="product-title">Chanel No. 5</h3>
+                            <p class="product-price">$150</p>
+                            <p class="product-description">La fragancia más icónica del mundo. Aldehídos, rosa y sándalo.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="gender-indicator for-women">Mujer</div>
+                            <div class="product-image">🌺</div>
+                            <h3 class="product-title">Tom Ford Black Orchid</h3>
+                            <p class="product-price">$180</p>
+                            <p class="product-description">Misterio y sensualidad en cada gota. Orquídea negra y trufa.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="gender-indicator for-women">Mujer</div>
+                            <div class="product-image">🌙</div>
+                            <h3 class="product-title">YSL Black Opium</h3>
+                            <p class="product-price">$140</p>
+                            <p class="product-description">Adicción nocturna para la mujer moderna. Café, vainilla y jazmín.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="gender-indicator for-women">Mujer</div>
+                            <div class="product-image">🌹</div>
+                            <h3 class="product-title">Miss Dior</h3>
+                            <p class="product-price">$130</p>
+                            <p class="product-description">Elegancia floral francesa. Rosa de Grasse y peonía.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="gender-indicator for-women">Mujer</div>
+                            <div class="product-image">💎</div>
+                            <h3 class="product-title">Lancôme La Vie Est Belle</h3>
+                            <p class="product-price">$125</p>
+                            <p class="product-description">La vida es bella con esta fragancia. Iris, jazmín y vainilla.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="gender-indicator for-women">Mujer</div>
+                            <div class="product-image">🦋</div>
+                            <h3 class="product-title">Viktor & Rolf Flowerbomb</h3>
+                            <p class="product-price">$155</p>
+                            <p class="product-description">Explosión floral de feminidad. Orquídea, rosa y jazmín.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="gender-indicator for-women">Mujer</div>
+                            <div class="product-image">🍓</div>
+                            <h3 class="product-title">Marc Jacobs Daisy</h3>
+                            <p class="product-price">$95</p>
+                            <p class="product-description">Frescura juvenil y espontánea. Violeta, fresa y gardenia.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                        <div class="product-card">
+                            <div class="gender-indicator for-women">Mujer</div>
+                            <div class="product-image">🌻</div>
+                            <h3 class="product-title">Dolce & Gabbana Light Blue</h3>
+                            <p class="product-price">$85</p>
+                            <p class="product-description">Mediterráneo en una botella. Limón siciliano y bambú.</p>
+                            <button class="buy-button">Comprar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fragrance Guide Section -->
+                <div class="fragrance-guide">
+                    <div class="guide-content">
+                        <h3>Guía de Fragancias</h3>
+                        <p>Encuentra el perfume perfecto según tu personalidad y ocasión. 
+                        Nuestros expertos están disponibles para asesorarte en la elección ideal.</p>
+                        <div class="fragrance-types">
+                            <div class="fragrance-type">
+                                <span class="type-icon">🌸</span>
+                                <h4>Florales</h4>
+                                <p>Románticas y elegantes</p>
+                            </div>
+                            <div class="fragrance-type">
+                                <span class="type-icon">🌿</span>
+                                <h4>Frescas</h4>
+                                <p>Energizantes y vitales</p>
+                            </div>
+                            <div class="fragrance-type">
+                                <span class="type-icon">🌰</span>
+                                <h4>Orientales</h4>
+                                <p>Misteriosas y seductoras</p>
+                            </div>
+                            <div class="fragrance-type">
+                                <span class="type-icon">🌲</span>
+                                <h4>Amaderadas</h4>
+                                <p>Cálidas y sofisticadas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfume Care Section -->
+                <div class="care-section">
+                    <div class="care-content">
+                        <h3>Consejos de Aplicación</h3>
+                        <p>Maximiza la duración y proyección de tu fragancia con estos consejos profesionales de nuestros expertos.</p>
+                        <div class="care-tips">
+                            <div class="tip-item">
+                                <span class="tip-icon">🎯</span>
+                                <span>Aplica en puntos de pulso</span>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-icon">🚿</span>
+                                <span>Después de la ducha</span>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-icon">❄️</span>
+                                <span>Conserva en lugar fresco</span>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-icon">💧</span>
+                                <span>No frotes después de aplicar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Esencia & Tiempo</h3>
+                    <p>Donde la elegancia se encuentra con el tiempo</p>
+                    <div class="footer-contact">
+                        <p>📞 +57 (1) 322 858 5364</p>
+                        <p>✉️ info@esenciaytiempo.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="relojes.html">Relojes</a></li>
+                        <li><a href="contactanos.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📞 +57 (1) 322 858 5364</p>
+                    <p>✉️ info@esenciaytiempo.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Esencia & Tiempo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal del Carrito -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2><i class="fas fa-shopping-cart"></i> Mi Carrito</h2>
+                <button class="close-cart" id="close-cart" aria-label="Cerrar carrito">&times;</button>
+            </div>
+
+            <div class="cart-body">
+                <!-- Lista de productos en el carrito -->
+                <div class="cart-items" id="cart-items">
+                    <div class="empty-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p>Tu carrito está vacío</p>
+                        <p>¡Agrega algunos productos increíbles!</p>
+                    </div>
+                </div>
+
+                <!-- Total del carrito -->
+                <div class="cart-total" id="cart-total-section" style="display: none;">
+                    <div class="total-row">
+                        <span>Subtotal:</span>
+                        <span id="cart-subtotal">$0</span>
+                    </div>
+                    <div class="total-row total-final">
+                        <span>Total:</span>
+                        <span id="cart-total">$0</span>
+                    </div>
+                </div>
+
+                <!-- Formulario de datos del cliente -->
+                <div class="customer-form" id="customer-form" style="display: none;">
+                    <h3><i class="fas fa-user"></i> Datos del Cliente</h3>
+                    <form id="checkout-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-name">Nombre Completo *</label>
+                                <input type="text" id="customer-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-phone">Teléfono/WhatsApp *</label>
+                                <input type="tel" id="customer-phone" name="phone" required placeholder="+57 300 123 4567">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="customer-email">Email</label>
+                                <input type="email" id="customer-email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="customer-city">Ciudad *</label>
+                                <input type="text" id="customer-city" name="city" required placeholder="Bogotá">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-address">Dirección de Entrega</label>
+                            <input type="text" id="customer-address" name="address" placeholder="Calle 123 #45-67, Apto 101">
+                        </div>
+                        <div class="form-group">
+                            <label for="customer-notes">Notas Adicionales</label>
+                            <textarea id="customer-notes" name="notes" rows="3" placeholder="Comentarios especiales, preferencias de entrega, etc."></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Opciones de pago -->
+                <div class="payment-options" id="payment-options" style="display: none;">
+                    <h3><i class="fas fa-credit-card"></i> Opciones de Pago</h3>
+                    <p class="payment-note">Elige tu método de pago preferido. Te enviaremos los datos de la cuenta correspondiente por WhatsApp.</p>
+                    
+                    <div class="payment-methods">
+                        <div class="payment-method" data-method="nequi">
+                            <div class="payment-icon nequi">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="payment-info">
+                                <h4>Nequi</h4>
+                                <p>Transferencia desde tu app Nequi</p>
+                            </div>
+                            <div class="payment-radio">
+                                <input type="radio" name="payment" value="nequi" id="pay-nequi">
+                                <label for="pay-nequi"></label>
+                            </div>
+                        </div>
+
+                        <div class="payment-method" data-method="daviplata">
+                            <div class="payment-icon daviplata">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="payment-info">
+                                <h4>DaviPlata</h4>
+                                <p>Pago desde tu celular DaviPlata</p>
+                            </div>
+                            <div class="payment-radio">
+                                <input type="radio" name="payment" value="daviplata" id="pay-daviplata">
+                                <label for="pay-daviplata"></label>
+                            </div>
+                        </div>
+
+                        <div class="payment-method" data-method="bancolombia">
+                            <div class="payment-icon bancolombia">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="payment-info">
+                                <h4>Bancolombia</h4>
+                                <p>Transferencia bancaria</p>
+                            </div>
+                            <div class="payment-radio">
+                                <input type="radio" name="payment" value="bancolombia" id="pay-bancolombia">
+                                <label for="pay-bancolombia"></label>
+                            </div>
+                        </div>
+
+                        <div class="payment-method" data-method="mercadopago">
+                            <div class="payment-icon mercadopago">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <div class="payment-info">
+                                <h4>Mercado Pago</h4>
+                                <p>Tarjetas y otros métodos</p>
+                                <a href="https://mercadopago.com.co" target="_blank" class="mp-link">Ver opciones</a>
+                            </div>
+                            <div class="payment-radio">
+                                <input type="radio" name="payment" value="mercadopago" id="pay-mercadopago">
+                                <label for="pay-mercadopago"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-footer">
+                <button class="btn-continue-shopping" id="continue-shopping">
+                    <i class="fas fa-arrow-left"></i> Seguir Comprando
+                </button>
+                <button class="btn-checkout" id="btn-checkout" style="display: none;">
+                    <i class="fas fa-whatsapp"></i> Finalizar Compra por WhatsApp
+                </button>
+                <button class="btn-clear-cart" id="clear-cart" style="display: none;">
+                    <i class="fas fa-trash"></i> Vaciar Carrito
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
